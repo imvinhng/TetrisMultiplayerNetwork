@@ -7,10 +7,10 @@ const server = new WebSocketServer({port: 9000});
 const sessions = new Map;
 
 // Removed u, v, i, l cause those characters are confusing
-function createId(Len = 6, chars = 'abcdefghjkmnopqrstwxyz0123456789') 
+function createId(len = 6, chars = 'abcdefghjkmnopqrstwxyz0123456789') 
 {
     let id = '';
-    while(Len--) {
+    while(len--) {
         id += chars[Math.random() * chars.length | 0];
     }
     return id;

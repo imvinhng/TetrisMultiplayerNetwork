@@ -4,12 +4,13 @@ localTetris.element.classList.add('local');
 localTetris.run();
 
 const connectionManager = new ConnectionManager(tetrisManager);
-connectionManager.connect('ws://localhost:9000');
+connectionManager.connect('ws://localhost:9000','echo-protocol');
+
+alert(' Rules \n Please use Q or W to rotate the tetromino,\n LEFT and RIGHT arows to move across the board,\n DOWN arrow to speed up the tetromino \n SPACEBAR anytime to pause the game ')
 
 const keyListener = (event) => {
     [
-        [65, 68, 81, 69, 83, 32],
-        [72, 75, 89, 73, 74, 32],
+        [37, 39, 81, 87, 40, 32],
     ].forEach((key, index) => {
         const player = localTetris.player;
         if (event.type === 'keydown') {
@@ -21,6 +22,8 @@ const keyListener = (event) => {
                 player.rotate(-1);
             } else if (event.keyCode === key[3]) {
                 player.rotate(1);
+            } else if (event.keyCode === 32) {
+                alert("PAUSE MENU");
             }
         }
 
