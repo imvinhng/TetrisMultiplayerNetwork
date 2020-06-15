@@ -10,7 +10,11 @@ body {
     flex: 1 1 auto;
 }
 
+.local canvas {
+    border-color: #fff;
+}
+
 canvas {
-    border: solid .2em #fff;
+    border: solid .2em #707070;
     height: 90vh;
 }
