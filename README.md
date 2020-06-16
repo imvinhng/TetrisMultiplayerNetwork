@@ -1,7 +1,7 @@
 # TetrisMultiplayerNetwork
-Advanced version of Tetris <br>
-Player could share the URL to friends and family to join the room, <br>
-or create custom room name by changing the name after '#'<br>
+Advanced version of Tetris /
+Player could share the URL to friends and family to join the room, /
+or create custom room name by changing the name after '#'\
 Arrows button to move across & down, Q or W to rotate <br>
 
 ## Instruction <br>
